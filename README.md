@@ -109,6 +109,6 @@ No hat, no beard       0.97      0.98      0.97      2044
 
 Prediction examples:
 
-![example_1.jpg](examples_for_github/example_1.jpg)
-![example_2.jpg](examples_for_github/example_2.jpg)
-![example_3.jpg](examples_for_github/example_3.jpg)
+![example_1.png](examples_for_github/example_1.png)
+![example_2.png](examples_for_github/example_2.png)
+![example_3.png](examples_for_github/example_3.png)
