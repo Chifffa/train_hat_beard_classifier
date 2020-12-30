@@ -70,13 +70,6 @@ def predict(dataset_path: str, weights: Optional[str], show_predictions: bool, g
     if show_predictions:
         for i in range(len(data_gen)):
             img_batch, label_batch = data_gen[i]
-
-            import cv2
-            img = cv2.cvtColor(cv2.imread('/home/dmgoncharov/Downloads/example_3.jpg'), cv2.COLOR_BGR2RGB)
-            img = cv2.resize(img, (128, 128), interpolation=cv2.INTER_AREA)
-            img_batch = np.float32(np.expand_dims(img, axis=0) / 255)
-            label_batch = [np.array([[0, 1]], dtype=np.float32), np.array([[0, 1]], dtype=np.float32)]
-
             predicts = model_obj.inference([img_batch])
 
             label, _, _ = get_class(label_batch)
